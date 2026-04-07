@@ -9,32 +9,30 @@
 #define PRODUCT      "Dactyl Manuform Custom"
 
 /* Matrix Size
- * TODO: Confirm exact row/col count from physical schematic
- * Left hand: 6 rows × 6 cols + thumb cluster
- * Right hand: mirror of left
+ * Layout: handwired/dactyl_manuform/4x6
+ * 4 finger rows × 6 cols per side + 2 thumb keys per side = 26 keys × 2 sides = 52 total
+ * Physical matrix uses 6 rows per side (rows 4-5 = thumb cluster positions)
  */
 #define MATRIX_ROWS 12       // 6 rows left + 6 rows right
-#define MATRIX_COLS 6        // max columns
+#define MATRIX_COLS 6
 
-/* Pin Assignment — Pro Micro
- * TODO: Confirm actual pins from physical wiring/schematic
- * These are placeholder values based on common Dactyl Manuform builds
+/* Pin Assignment — Pro Micro (ATmega32U4)
+ * Based on: Official QMK handwired/dactyl_manuform/4x6 default config
+ * ⚠️ Adjust these if your physical wiring differs — use multimeter to verify
  */
-#define MATRIX_ROW_PINS { B0, B1, B2, B3, B4, B5 }
-#define MATRIX_COL_PINS { F4, F5, F6, F7, B6, D4 }
+#define MATRIX_ROW_PINS { F6, F7, B1, B3, B2, B6 }
+#define MATRIX_COL_PINS { F5, F4, B5, B4, D7, C6 }
 
-/* Diode Direction
- * TODO: Confirm from physical diode orientation
- * COL2ROW = current flows column → row
- * ROW2COL = current flows row → column
- */
+/* Diode Direction — confirmed COL2ROW from schematic */
 #define DIODE_DIRECTION COL2ROW
 
 /* Split Keyboard */
 #define USE_SERIAL
 
-/* TODO: Confirm TRRS data pin (D0 or D1) from physical wiring */
-#define SOFT_SERIAL_PIN D0
+/* Serial pin — official QMK 4x6 default
+ * ⚠️ Adjust if your TRRS data wire connects to a different pin (D0 or D1)
+ */
+#define SOFT_SERIAL_PIN D2
 
 /* Master side: right hand is connected to USB
  * Alternative: use EE_HANDS (requires flashing each side separately with different flags)
