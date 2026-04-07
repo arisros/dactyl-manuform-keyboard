@@ -1,0 +1,25 @@
+# QMK build artifacts
+.build/
+*.hex
+*.bin
+*.uf2
+*.o
+*.d
+*.elf
+*.map
+*.lst
+
+# QMK CLI
+.qmk/
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+
+# Editor
+.viminfo
+Session.vim
+*.swp
+*.swo
