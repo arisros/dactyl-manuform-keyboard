@@ -1,0 +1,54 @@
+# KEY MAPPING TEST - Right Side
+# Tekan tombol fisik, tulis apa yang KELUAR di TextEdit
+# NONE = tidak keluar
+
+# === ROW 0 - Number row ===
+# Fisik kiri→kanan: 6 7 8 9 0 BSPC
+KC_6    = BACKSPACE
+KC_7    = 0
+KC_8    = 9
+KC_9    = 8
+KC_0    = 7
+KC_BSPC = 6
+
+# === ROW 1 - QWERTY row ===
+# Fisik kiri→kanan: Y U I O P -
+KC_Y    = -
+KC_U    = p
+KC_I    = o
+KC_O    = i
+KC_P    = u
+KC_MINS = y
+
+# === ROW 2 - Home row ===
+# Fisik kiri→kanan: H J K L ; '
+KC_H    = '
+KC_J    = ;
+KC_K    = l
+KC_L    = k
+KC_SCLN = j
+KC_QUOT = h
+
+# === ROW 3 - Bottom row ===
+# Fisik kiri→kanan: N M , . / backslash
+KC_N    = \
+KC_M    = /
+KC_COMM = .
+KC_DOT  = ,
+KC_SLSH = m
+KC_BSLS = n
+
+# === Thumb ===
+# Tekan satu per satu semua thumb kanan
+# Expected: ENT HOME + = | BSPC RSFT RALT MO(2)
+T1 = =
+T2 = RIGHTSHIFT dan +
+T3 = 
+T4 = 
+T5 = 
+T6 = 
+T7 = 
+MO(2) = RIGHTALT
+
+# === NOTES ===
+#
