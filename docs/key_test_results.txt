@@ -1,0 +1,68 @@
+# KEY MAPPING TEST - Left Side
+# Layout: arisjirat_56.json (LAYOUT_5x6)
+# Pins → Rows: D4, C6, D7, E6, B5, B4
+#         Cols: F4(0), F5(1), F6(2), F7(3), B1(4), B2(5)
+#
+# Instruksi:
+#   Tekan tombol fisik di posisi yang ditunjuk (kiri→kanan)
+#   Tulis apa yang KELUAR di TextEdit setelah "="
+#   NONE = tidak keluar, DEL = tombol delete, SPC = spasi
+#
+# Firmware yang di-flash SEKARANG masih test keymap lama.
+# Isi dulu ini, nanti baru compile & flash yang benar.
+
+# === ROW 0 - Number row (pin D4) - 6 keys ===
+# Fisik kiri→kanan: ` 1 2 3 4 5
+KC_GRV  = 1
+KC_1    = 2
+KC_2    = 3
+KC_3    = 4
+KC_4    = 5
+KC_5    = 6
+
+# === ROW 1 - QWERTY row (pin C6) - 6 keys ===
+# Fisik kiri→kanan: TAB Q W E R T
+KC_TAB  = q
+KC_Q    = w
+KC_W    = e
+KC_E    = r
+KC_R    = t
+KC_T    = y
+
+# === ROW 2 - Home row (pin D7) - 6 keys ===
+# Fisik kiri→kanan: LSHIFT A S D F G
+KC_LSFT = a
+KC_A    = s
+KC_S    = d
+KC_D    = f
+KC_F    = g
+KC_G    = h
+
+# === ROW 3 - Bottom row (pin E6) - 6 keys ===
+# Fisik kiri→kanan: LCTRL Z X C V B
+KC_LCTL = z
+KC_Z    = x
+KC_X    = c
+KC_C    = v
+KC_V    = b
+KC_B    = n
+
+# === ROW 4 - Thumb inner (pin B5) - 4 keys ===
+# 2 tombol atas + 2 tombol bawah di cluster thumb
+KC_LBRC = w
+KC_RBRC = x
+KC_LGUI = u
+KC_SPC  = v
+
+# === ROW 5 - Thumb outer (pin B4) - 4 keys ===
+# 2 tombol atas + 2 tombol bawah di cluster thumb
+MO(1)   = j 
+KC_LALT = k
+KC_LSFT2= l
+KC_ESC  = m
+
+# === NOTES ===
+# Thumb layout fisik (gambar posisi tombol):
+LBRC itu sekarang posisi nya di bawah X, RIGHT BRACKET di bawah c
+
+

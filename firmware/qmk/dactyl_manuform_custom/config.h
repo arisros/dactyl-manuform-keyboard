@@ -34,10 +34,8 @@
  */
 #define SOFT_SERIAL_PIN D2
 
-/* Master side: right hand is connected to USB
- * Alternative: use EE_HANDS (requires flashing each side separately with different flags)
- */
-#define MASTER_RIGHT
+/* Master side: LEFT hand is connected to USB */
+#define MASTER_LEFT
 
 /* Misc */
 #define DEBOUNCE 5
